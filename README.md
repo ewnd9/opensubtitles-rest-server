@@ -2,16 +2,21 @@
 
 [![Build Status](https://travis-ci.org/ewnd9/opensubtitles-rest-server.svg?branch=master)](https://travis-ci.org/ewnd9/opensubtitles-rest-server)
 
-## Install
-
-```
-$ npm install --save opensubtitles-rest-server
-```
+REST wrapper over opensubtitles xmlrpc api
 
 ## Usage
 
+```
+$ git clone https://github.com/ewnd9/opensubtitles-rest-server.git
+$ npm install --production
+$ npm start
+```
+
+## API
+
 ```js
-const opensubtitlesRestServer = require('opensubtitles-rest-server');
+$ curl "http://localhost:8000/api/v1/search/:imdb"
+$ curl "http://localhost:8000/api/v1/search/:imdb/:s/:ep"
 ```
 
 ## License
