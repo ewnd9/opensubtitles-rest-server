@@ -8,7 +8,7 @@
     "start": "node lib/index.js",
     "lint": "eslint 'lib/**/*.js'",
     "precommit": "npm run lint && npm test",
-    "test": "ava",
+    "test": "OS_USER_AGENT=OSTestUserAgentTemp ava",
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "express": "^4.14.0",
-    "opensubtitles-universal-api": "^1.1.0"
+    "opensubtitles-universal-api": "^1.1.1"
   },
   "devDependencies": {
     "ava": "^0.14.0",

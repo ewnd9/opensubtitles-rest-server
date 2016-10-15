@@ -9,8 +9,10 @@ REST wrapper over opensubtitles xmlrpc api
 ```
 $ git clone https://github.com/ewnd9/opensubtitles-rest-server.git
 $ npm install --production
-$ npm start
+$ OS_USER_AGENT=OSTestUserAgent npm start
 ```
+
+:warning: 'OSTestUserAgent' is intended only for the test usage. Use the [instruction](https://trac.opensubtitles.org/projects/opensubtitles/wiki/DevReadFirst) to get your own token.
 
 ## API
 
